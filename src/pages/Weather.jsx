@@ -1,24 +1,14 @@
-import React, { useState } from 'react'
-import Loading from '../components/Loading'
-import WeatherResult from '../components/WeatherResult'
+import React from "react";
+import ApplicationHome from "../components/ApplicationHome";
 
-const Weather = ({ dataWeather }) => {
-
-  // State untuk mengatur keadaan loading
-  // Jika True maka loading berjalan dan jika false maka loading berhenti dan component Weather Result akan ditampilkan
-  const [isLoading, setIsLoading ] = useState(true)
-
-  // Durasi Loading yang dimana setelah 4 detik keaadaan loading menjadi false
-  setTimeout(() => {
-    setIsLoading(false)
-  }, 4000)
-
+const Weather = ({ fetchData }) => {
   return (
     <>
-      {/* Kondisi ketika user pertama masuk ke halaman */}
-      { isLoading ? <Loading /> : <WeatherResult dataWeather={dataWeather} /> }
+      <div className="bg-primary-500 absolute -left-[28px] top-[187px] h-[90px] w-[90px] rounded-full blur-[75px] sm:-left-[191px] sm:top-[390px] sm:h-[250px] sm:w-[250px] sm:blur-[175px] "></div>
+      <div className="bg-primary-500 absolute -right-[43px] top-[572px] h-[90px] w-[100px] rounded-full blur-[75px] sm:-right-[199px] sm:top-[150px] sm:h-[250px] sm:w-[250px] sm:blur-[175px] "></div>
+      <ApplicationHome data={fetchData} />
     </>
-  )
-}
+  );
+};
 
-export default Weather
+export default Weather;

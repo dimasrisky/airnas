@@ -1,0 +1,8 @@
+body {
+    font-family: "Plus Jakarta Sans", "sans-serif";
+    overflow-x: hidden;
+}
+
+.btn-shadow {
+    box-shadow: 0px 10px 30px 0px rgba(241, 186, 176, 0.60);
+}
