@@ -37,11 +37,7 @@ const RegisterPage = () => {
           <div className="bg-primary-950 h-[1px] w-full"></div>
         </div>
         <div className="flex flex-col gap-[10px]">
-          <UserInput
-            title="Nama"
-            type="name"
-            placeholder="Nama Lengkapmu"
-          />
+          <UserInput title="Nama" type="name" placeholder="Nama Lengkapmu" />
           <UserInput
             title="Email"
             type="email"
@@ -49,9 +45,11 @@ const RegisterPage = () => {
           />
           <UserInput title="Kata Sandi" type="password" />
         </div>
-        <button className="bg-primary-500 loginBtnShadow w-full rounded-[10px] py-[15px] text-[20px] font-semibold text-white">
+        <Link to="/">
+          <button className="bg-primary-500 loginBtnShadow w-full rounded-[10px] py-[15px] text-[20px] font-semibold text-white">
             Daftar
           </button>
+        </Link>
         <p className="text-primary-800 text-center text-[18px] font-medium ">
           Sudah punya akun?{" "}
           <Link to="/login" className="text-primary-600 font-bold">

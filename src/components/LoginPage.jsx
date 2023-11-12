@@ -43,13 +43,18 @@ const LoginPage = () => {
             placeholder="contohemail123@contoh.com"
           />
           <UserInput title="Kata Sandi" type="password" />
-          <button className="bg-primary-500 loginBtnShadow hover:bg-primary-600 w-full rounded-[10px] py-[15px] text-[20px] font-semibold text-white transition-all">
-            Masuk
-          </button>
+          <Link to="/">
+            <button className="bg-primary-500 loginBtnShadow hover:bg-primary-600 w-full rounded-[10px] py-[15px] text-[20px] font-semibold text-white transition-all">
+              Masuk
+            </button>
+          </Link>
         </div>
         <p className="text-primary-800 text-center text-[18px] font-medium ">
           Belum punya akun?{" "}
-          <Link to="/register" className="text-primary-500 font-bold hover:text-primary-600 transition-all">
+          <Link
+            to="/register"
+            className="text-primary-500 hover:text-primary-600 font-bold transition-all"
+          >
             Daftar
           </Link>
         </p>
