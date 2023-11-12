@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Login, Register, Weather, WeatherResult } from "./pages"
+import { Home, Login, Register, Weather, WeatherResult } from "./pages";
 
 const App = () => {
   // Fetching API ketika user pertama mengunjungi aplikasi/website, kemudian hasil dari fetch akan ditaruh kedalam state dataWeather
@@ -21,12 +21,15 @@ const App = () => {
         <Route path="/" element={<Home fetchData={dataWeather} />} />
         {/* Login Page */}
         <Route path="/login" element={<Login />} />
-        {/* Register Page */}
+        {/* Register Page */}a
         <Route path="/register" element={<Register />} />
         {/* Weather Application Page */}
         <Route path="/weather" element={<Weather fetchData={dataWeather} />} />
         {/* Weather Application + Data Page */}
-        <Route path="/weatherResult" element={<WeatherResult fetchData={dataWeather} />}/>
+        <Route
+          path="/weatherResult"
+          element={<WeatherResult fetchData={dataWeather} />}
+        />
       </Routes>
     </Router>
   );
