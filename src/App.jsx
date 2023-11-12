@@ -26,7 +26,7 @@ const App = () => {
         {/* Weather Application Page */}
         <Route path="/weather" element={<Weather fetchData={dataWeather} />} />
         {/* Weather Application + Data Page */}
-        <Route path="/weather/result" element={<WeatherResult fetchData={dataWeather} />}/>
+        <Route path="/weatherResult" element={<WeatherResult fetchData={dataWeather} />}/>
       </Routes>
     </Router>
   );

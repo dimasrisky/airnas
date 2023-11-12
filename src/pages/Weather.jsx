@@ -4,8 +4,8 @@ import ApplicationHome from "../components/ApplicationHome";
 const Weather = ({ fetchData }) => {
   return (
     <>
-      <div className="bg-primary-500 absolute -left-[28px] top-[187px] h-[90px] w-[90px] rounded-full blur-[75px] sm:-left-[191px] sm:top-[390px] sm:h-[250px] sm:w-[250px] sm:blur-[175px] "></div>
-      <div className="bg-primary-500 absolute -right-[43px] top-[572px] h-[90px] w-[100px] rounded-full blur-[75px] sm:-right-[199px] sm:top-[150px] sm:h-[250px] sm:w-[250px] sm:blur-[175px] "></div>
+      <div className="bg-primary-500 absolute -left-[168px] top-[65px] -z-10 h-[250px] w-[250px] rounded-full opacity-40 blur-[125px] sm:-left-[190px] sm:top-[122px] sm:opacity-100 sm:blur-[175px] xl:top-[390px]"></div>
+      <div className="bg-primary-500 absolute right-[295px] top-[535px] -z-10 h-[320px] w-[320px] rounded-full opacity-60 blur-[175px] sm:right-[675px] sm:top-[685px] sm:h-[250px] sm:w-[250px] sm:opacity-100 xl:-right-[199px] xl:top-[150px]"></div>
       <ApplicationHome data={fetchData} />
     </>
   );

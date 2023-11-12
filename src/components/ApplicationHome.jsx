@@ -4,9 +4,10 @@ import Button from "./Button";
 
 const ApplicationHome = ({ data }) => {
   const { country, city } = data || {};
+
   return (
     <>
-      <nav className="fixed flex h-[60px] w-full items-center justify-between px-[8%] sm:h-[100px] sm:px-[10%]">
+      <nav className="fixed flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%]">
         <Link to="/weather">
           <div className="flex items-center gap-[10px]">
             <img
@@ -33,8 +34,8 @@ const ApplicationHome = ({ data }) => {
           </div>
         </div>
       </nav>
-      <section className="flex min-h-screen flex-col items-center justify-center gap-[10px] px-[8%] sm:px-[10%] xl:mx-auto xl:max-w-[650px] xl:px-0">
-        <h1 className="text-center text-[30px] font-extrabold leading-tight sm:text-[48px] xl:max-w-[588px]">
+      <section className="flex min-h-screen flex-col items-center justify-center gap-[10px] px-[4%] sm:px-[10%] lg:mx-auto lg:max-w-[650px] lg:px-0 overflow-hidden">
+        <h1 className="text-center text-[30px] font-extrabold leading-tight sm:text-[48px] lg:max-w-[588px]">
           CEK INFORMASI CUACA DI{" "}
           <span className="text-primary-600">DAERAHMU</span>
         </h1>
@@ -47,7 +48,7 @@ const ApplicationHome = ({ data }) => {
           lainnya dengan mudah dan cepat. Tetap mendapatkan data dan informasi
           terbaru dengan kami, <span className="font-semibold">Airnas.</span>
         </p>
-        <Button link="/weather/result" className={`mt-[10px] sm:mt-[20px]`}>
+        <Button link="/weatherResult" className={`mt-[10px] sm:mt-[20px]`}>
           Cek Tempatku
         </Button>
       </section>
