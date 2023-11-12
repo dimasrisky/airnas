@@ -48,7 +48,7 @@ const ApplicationHome = ({ data }) => {
           lainnya dengan mudah dan cepat. Tetap mendapatkan data dan informasi
           terbaru dengan kami, <span className="font-semibold">Airnas.</span>
         </p>
-        <Button link="/weatherResult" className={`mt-[10px] sm:mt-[20px]`}>
+        <Button link="/weatherResult" className={`mt-[10px] sm:mt-[20px] hover:bg-primary-600 transition-all`}>
           Cek Tempatku
         </Button>
       </section>

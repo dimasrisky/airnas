@@ -31,7 +31,7 @@ const ApplicationResult = ({ data }) => {
           </div>
         </Link>
         <Link to="/weather">
-          <button className="bg-primary-500 btn-shadow rounded-[5px] px-[32px] py-[8px] text-[12px] font-semibold text-white sm:px-[39px] sm:py-[11px] sm:text-[18px] ">
+          <button className="bg-primary-500 btn-shadow rounded-[5px] px-[32px] py-[8px] text-[12px] font-semibold text-white sm:px-[39px] sm:py-[11px] sm:text-[18px] hover:bg-primary-600 transition-all ">
             Kembali
           </button>
         </Link>
@@ -61,7 +61,7 @@ const ApplicationResult = ({ data }) => {
               <h5 className="textShadow text-center text-[14px] font-bold text-white sm:text-[24px] lg:text-left">
                 Informasi Cuaca Hari Ini
               </h5>
-              <div className="grid grid-cols-2 grid-rows-2 gap-[10px] sm:gap-[20px] w-[100%]">
+              <div className="grid w-[100%] grid-cols-2 grid-rows-2 gap-[10px] sm:gap-[20px]">
                 <InformationsCard
                   icon="/icons/winds.png"
                   title="Wind Speed"
