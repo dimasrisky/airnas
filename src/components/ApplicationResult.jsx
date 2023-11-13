@@ -18,8 +18,8 @@ const ApplicationResult = ({ data }) => {
     icon.includes("n") ? `/icons/moon.png` : `/icons/sun.png`;
 
   return (
-    <>
-      <nav className="fixed flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%]">
+    <div className="min-h-screen flex items-center justify-center">
+      <nav className="absolute top-0 flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%]">
         <Link to="/weather">
           <div className="flex items-center gap-[10px]">
             <img
@@ -37,16 +37,15 @@ const ApplicationResult = ({ data }) => {
         </Link>
       </nav>
 
-      <section className="flex min-h-screen items-center justify-center px-[4%] sm:px-[10%]">
+      <section className="flex justify-center items-center px-[4%] sm:px-[10%]">
         <div className="weather-bg h-[498px] w-full max-w-[915px] rounded-[30px] sm:h-[683px] lg:h-[480px]">
-          <div className="flex h-full w-full flex-col items-center gap-[10px] py-[30px] lg:flex-row lg:justify-center lg:gap-[100px]">
+          <div className="flex h-full w-full flex-col items-center gap-[10px] py-[30px] lg:flex-row lg:justify-center lg:gap-[100px] px-[25px] sm:px-[100px]">
             <div className="flex flex-col justify-center text-center">
               <h1 className="textShadow text-[16px] font-bold text-white sm:text-[24px]">
                 {city || "Loading"}
               </h1>
-              <h3 className="textShadow mb-[5px] text-[12px] font-bold text-white sm:text-[16px] ">{`${
-                state || "Loading"
-              }, ${country || "Loading"}`}</h3>
+              <h3 className="textShadow mb-[5px] text-[12px] font-bold text-white sm:text-[16px] ">{`${state || "Loading"
+                }, ${country || "Loading"}`}</h3>
               <p className="textShadow text-[12px] font-normal text-white sm:text-[16px] ">
                 {date || "Loading"}
               </p>
@@ -87,7 +86,7 @@ const ApplicationResult = ({ data }) => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
