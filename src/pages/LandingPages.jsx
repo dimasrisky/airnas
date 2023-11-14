@@ -112,7 +112,7 @@ const LandingPages = ({ dataWeather }) => {
             <div className='flex flex-col gap-3'>
                 <h1 className='font-extrabold text-primary-900 sm:text-[1.3rem]'>Airnas - Pengecek Cuaca</h1>
                 <p className='font-medium text-primary-800 text-[0.6rem] sm:text-[0.8rem]'>Airnas adalah aplikasi web yang berfungsi untuk mengecek cuaca saat ini di daerah pengguna. Aplikasi ini sangat mudah digunakan, cukup dengan menekan tombol "Cek Tempatku", maka secara otomatis akan keluar data cuaca di daerah kalian, termasuk suhu, kelembaban, kecepatan angin, dan kualitas udara.</p>
-                <Link to='/weather-app-home' className='bg-primary-500 mx-auto xl:mx-0 w-[7rem] sm:w-[9rem] font-bold text-white text-center py-2 text-[0.7rem] rounded-md mt-[1rem]'>Coba Sekarang</Link>
+                <Link to='/weather-home' className='bg-primary-500 mx-auto xl:mx-0 w-[7rem] sm:w-[9rem] font-bold text-white text-center py-2 text-[0.7rem] rounded-md mt-[1rem]'>Coba Sekarang</Link>
             </div>
         </main>
 
@@ -136,7 +136,7 @@ const LandingPages = ({ dataWeather }) => {
                     <Article img={'article-4.png'} title={'Cuaca Tak Menentu, Cabai Merah di Deli Serdang Terancam Gagal Panen Raya'} date={'06 Oktober 2023'} articleLink={'https://medan.kompas.com/read/2023/10/06/134618778/cuaca-tak-menentu-cabai-merah-di-deli-serdang-terancam-gagal-panen-raya'}/>
                 </div>
             </div>
-            <a href='' className='bg-primary-500 mx-auto w-[8rem] font-bold text-white text-center py-2 text-[0.6rem] rounded-[0.4rem] mt-[1rem] xl:mt-[3rem] btn-shadow'>Lihat Selengkapnya</a>
+            <a href='https://www.kompas.com/tag/cuaca-ekstrem' className='bg-primary-500 mx-auto w-[8rem] font-bold text-white text-center py-2 text-[0.6rem] rounded-[0.4rem] mt-[1rem] xl:mt-[3rem] btn-shadow'>Lihat Selengkapnya</a>
         </main>
 
         {/* Footer */}
@@ -156,14 +156,16 @@ const LandingPages = ({ dataWeather }) => {
                             <img src="/assets/icons/arrow.png" alt="arrow" className={`${isPerusahaanDropdownOpen? 'rotate-0' : 'rotate-[180deg]'} sm:hidden`} />
                         </div>
                         <div className='hidden sm:flex flex-col font-semibold text-[0.6rem] gap-2 mt-[1rem]'>
-                            <a href="">Tentang Kami</a>
+                            <Link to='/about-page'>Tentang Kami</Link>
                             <a href="">Kebijakan Privasi</a>
                             <a href="">Syarat dan ketentuan</a>
                             <a href="">Bantuan</a>
                         </div>
+
+                        {/* Dropdown Mobile */}
                         {isPerusahaanDropdownOpen? (
                             <div className='flex sm:hidden flex-col font-semibold text-[0.6rem] gap-2 mt-[1rem]'>
-                                <a href="">Tentang Kami</a>
+                                <Link to='/about-page'>Tentang Kami</Link>
                                 <a href="">Kebijakan Privasi</a>
                                 <a href="">Syarat dan ketentuan</a>
                                 <a href="">Bantuan</a>
@@ -181,6 +183,7 @@ const LandingPages = ({ dataWeather }) => {
                             <a href="">Facebook</a>
                             <a href="">Instagram</a>
                         </div>
+                        {/* Dropdown Mobile */}
                         {isSosialMediaOpen? (
                             <div className='flex flex-col font-semibold text-[0.6rem] gap-2 mt-[1rem]'>
                                 <a href="">Twitter</a>
@@ -199,6 +202,7 @@ const LandingPages = ({ dataWeather }) => {
                             <a href="">Lisensi</a>
                             <a href="">Partnership</a>
                         </div>
+                         {/* Dropdown Mobile */}
                         {isLainnyaOpen? (
                             <div className='flex flex-col font-semibold text-[0.6rem] gap-2 mt-[1rem]'>
                                 <a href="">Lisensi</a>
@@ -210,8 +214,6 @@ const LandingPages = ({ dataWeather }) => {
             </div>
             <div className='bg-primary-500 border-t border-primary-700 text-center text-[0.6rem] py-3'>COPYRIGHT © 2023 — Airnas | Asta Arkananta <br /> SMKN 8 MALANG</div>
         </footer>
-        
-
     </>
   )
 }

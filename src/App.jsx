@@ -5,6 +5,7 @@ import WeatherResults from './pages/WeatherResultsPages'
 import LandingPages from './pages/LandingPages'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import AboutPage from './pages/AboutPage'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
       <Route path='/' element={ <LoginPage /> } /> {/* Router sign in */}
       <Route path='/register-page' element={ <RegisterPage /> } /> {/* Router sign up */}
       <Route path='/landing-page' element={ <LandingPages dataWeather={dataWeather} /> } /> {/* Router Landing Page */}
+      <Route path='/about-page' element={ <AboutPage dataWeather={dataWeather} /> } /> {/* Router ABout Page */}
       <Route path='/weather-home' element={ <WeatherAppHome dataWeather={dataWeather} /> } /> {/* Router untuk ke halaman Home atau halaman awal dari aplikasi */}
       <Route path='/weather-results' element={ <WeatherResults dataWeather={dataWeather} /> } /> {/* Router untuk ke halaman Weather untuk menampilkan informasi data cuaca */}
     </Routes>
