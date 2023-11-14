@@ -10,7 +10,7 @@ body {
 
 .weather-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
-    url("/icons/hero.png");
+    url("/assets/img/japanese-art.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

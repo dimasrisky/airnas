@@ -7,7 +7,7 @@ const UserInput = ({ title, type, placeholder = "" }) => {
       <input
         type={type}
         placeholder={placeholder}
-        className="bg-primary-100 text-primary-800 placeholder:text-primary-800 w-full rounded-[5px] px-[18px] py-[18px] text-[16px] font-semibold placeholder:text-[16px] placeholder:font-semibold placeholder:opacity-50 outline-none"
+        className="bg-primary-100 text-primary-800 placeholder:text-primary-800 w-full rounded-[5px] px-[18px] py-[18px] text-[16px] font-semibold outline-none placeholder:text-[16px] placeholder:font-semibold placeholder:opacity-50"
       />
     </div>
   );

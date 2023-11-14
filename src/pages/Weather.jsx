@@ -1,7 +1,7 @@
 import React from "react";
 import ApplicationHome from "../components/ApplicationHome";
 
-const Weather = ({ fetchData }) => {
+const WeatherPage = ({ fetchData }) => {
   return (
     <>
       <div className="bg-primary-500 absolute -left-[168px] top-[65px] -z-10 h-[250px] w-[250px] rounded-full opacity-40 blur-[125px] sm:-left-[190px] sm:top-[122px] sm:opacity-100 sm:blur-[175px] xl:top-[390px]"></div>
@@ -11,4 +11,4 @@ const Weather = ({ fetchData }) => {
   );
 };
 
-export default Weather;
+export default WeatherPage;

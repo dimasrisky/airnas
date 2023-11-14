@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Loading from "../components/Loading";
 import ApplicationResult from "../components/ApplicationResult";
 
-const WeatherResult = ({ fetchData }) => {
+const WeatherResultPage = ({ fetchData }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   setTimeout(() => {
@@ -18,4 +18,4 @@ const WeatherResult = ({ fetchData }) => {
   );
 };
 
-export default WeatherResult;
+export default WeatherResultPage;

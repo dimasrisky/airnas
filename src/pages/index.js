@@ -1,7 +1,15 @@
-import Home from "./Home";
-import Login from "./Login";
-import Register from "./Register";
-import Weather from "./Weather";
-import WeatherResult from "./WeatherResult";
+import LandingPage from "./Landing";
+import AboutPage from "./About";
+import LoginPage from "./Login";
+import RegisterPage from "./Register";
+import WeatherPage from "./Weather";
+import WeatherResultPage from "./WeatherResult";
 
-export { Home, Login, Register, Weather, WeatherResult };
+export {
+  LandingPage,
+  AboutPage,
+  LoginPage,
+  RegisterPage,
+  WeatherPage,
+  WeatherResultPage,
+};
