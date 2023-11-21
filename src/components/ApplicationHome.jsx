@@ -11,7 +11,7 @@ const ApplicationHome = ({ data }) => {
         <Link to="/weather">
           <div className="flex items-center gap-[10px]">
             <img
-              src="/icons/logo.png"
+              src="/assets/icons/logo.png"
               alt="logo"
               className="h-[30px] w-[30px] sm:h-[50px] sm:w-[50px] "
             />
@@ -20,7 +20,7 @@ const ApplicationHome = ({ data }) => {
         </Link>
         <div className="flex items-center gap-[12px]">
           <img
-            src="/icons/location.png"
+            src="/assets/icons/location.png"
             alt="location"
             className="h-[30px] w-[30px] sm:h-[48px] sm:w-[48px] "
           />
@@ -34,7 +34,7 @@ const ApplicationHome = ({ data }) => {
           </div>
         </div>
       </nav>
-      <section className="flex min-h-screen flex-col items-center justify-center gap-[10px] px-[4%] sm:px-[10%] lg:mx-auto lg:max-w-[650px] lg:px-0 overflow-hidden">
+      <section className="flex min-h-screen flex-col items-center justify-center gap-[10px] overflow-hidden px-[4%] sm:px-[10%] lg:mx-auto lg:max-w-[650px] lg:px-0">
         <h1 className="text-center text-[30px] font-extrabold leading-tight sm:text-[48px] lg:max-w-[588px]">
           CEK INFORMASI CUACA DI{" "}
           <span className="text-primary-600">DAERAHMU</span>
@@ -48,7 +48,10 @@ const ApplicationHome = ({ data }) => {
           lainnya dengan mudah dan cepat. Tetap mendapatkan data dan informasi
           terbaru dengan kami, <span className="font-semibold">Airnas.</span>
         </p>
-        <Button link="/weatherResult" className={`mt-[10px] sm:mt-[20px] hover:bg-primary-600 transition-all`}>
+        <Button
+          link="/weather-results"
+          className={`hover:bg-primary-600 mt-[10px] transition-all sm:mt-[20px]`}
+        >
           Cek Tempatku
         </Button>
       </section>

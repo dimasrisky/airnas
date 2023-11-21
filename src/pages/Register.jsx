@@ -9,7 +9,7 @@ const RegisterPage = () => {
       <div className="flex flex-col gap-[35px] px-[10%] py-[4%] sm:py-[6%] xl:w-[50%] xl:px-[8%] xl:py-[2%] xl:pr-[89px]">
         <Link to="/login" className="flex items-center gap-[10px]">
           <img
-            src="/icons/logo.png"
+            src="/assets/icons/logo.png"
             alt="logo"
             className="h-[50px] w-[50px] "
           />
@@ -26,7 +26,10 @@ const RegisterPage = () => {
           </div>
           <div className="flex flex-col gap-[20px] xl:flex-row">
             <LoginMethodButton text="Google" icon="/assets/icons/google.svg" />
-            <LoginMethodButton text="Facebook" icon="/assets/icons/facebook.svg" />
+            <LoginMethodButton
+              text="Facebook"
+              icon="/assets/icons/facebook.svg"
+            />
           </div>
         </div>
         <div className="flex items-center gap-[7px] text-center sm:gap-[33px]">
@@ -58,7 +61,7 @@ const RegisterPage = () => {
         </p>
       </div>
       <div className="bg-primary-500 hidden flex-col items-center justify-center gap-[50px] text-white xl:flex xl:min-h-screen xl:w-[50%] xl:px-[91px]">
-        <img src="/icons/Illus.png" alt="Illustration" />
+        <img src="/assets/img/Illus.png" alt="Illustration" />
         <h1 className="text-[32px] font-semibold">
           Setiap detik yang dihabiskan memeriksa aplikasi cuaca adalah investasi
           untuk menghindari kejutan tak terduga dari langit.

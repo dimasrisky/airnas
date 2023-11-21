@@ -36,7 +36,7 @@ const App = () => {
           path="/about-page"
           element={<AboutPage dataWeather={dataWeather} />}
         />
-        {/* Router ABout Page */}
+        {/* Router About Page */}
         <Route
           path="/weather-home"
           element={<WeatherPage dataWeather={dataWeather} />}
