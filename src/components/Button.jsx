@@ -12,5 +12,4 @@ const Button = ({ children, link, className }) => {
     </Link>
   );
 };
-
 export default Button;

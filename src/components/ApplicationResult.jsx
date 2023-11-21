@@ -1,12 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import InformationsCard from "./InformationsCard";
 
-const ApplicationResult = ({ data }) => {
-  const { country, city, state } = data || {};
-  const { tp, pr, hu, ws, ic } = data.current.weather || {};
-  const { aqius } = data.current.pollution || {};
 
+const ApplicationResult = ({ dataWeather }) => {
+  const { country, city, state } = dataWeather || {};
+  const { tp, pr, hu, ws, ic } = dataWeather.current.weather || {};
+  const { aqius } = dataWeather.current.pollution || {};
   const options = {
     weekday: "long",
     year: "numeric",
@@ -15,7 +14,6 @@ const ApplicationResult = ({ data }) => {
   };
 
   const date = new Date().toLocaleString("id-IN", options);
-
   const weatherIcon = (icon) =>
     icon.includes("n") ? `/assets/icons/moon.png` : `/assets/icons/sun.png`;
 
@@ -29,6 +27,7 @@ const ApplicationResult = ({ data }) => {
               alt="logo"
               className="h-[30px] w-[30px] sm:h-[50px] sm:w-[50px] "
             />
+
             <h1 className="text-[16px] font-bold sm:text-[24px]">Airnas</h1>
           </div>
         </Link>

@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  LandingPage,
-  AboutPage,
-  LoginPage,
-  RegisterPage,
-  WeatherPage,
-  WeatherResultPage,
-} from "./pages";
+import LoginPage from "./pages/LoginPage"
+import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
+import WeatherAppHome from "./pages/WeatherAppHome";
+import WeatherResultPage from "./pages/WeatherResultPages";
 
 const App = () => {
   // Fetching API ketika user pertama mengunjungi aplikasi/website, kemudian hasil dari fetch akan ditaruh kedalam state dataWeather
@@ -22,34 +19,17 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LoginPage />} /> {/* Router sign in */}
-        <Route path="/register-page" element={<RegisterPage />} />
-        {/* Router sign up */}
-        <Route
-          path="/landing-page"
-          element={<LandingPage dataWeather={dataWeather} />}
-        />
-        {/* Router Landing Page */}
-        <Route
-          path="/about-page"
-          element={<AboutPage dataWeather={dataWeather} />}
-        />
-        {/* Router About Page */}
-        <Route
-          path="/weather-home"
-          element={<WeatherPage dataWeather={dataWeather} />}
-        />
-        {/* Router untuk ke halaman Home atau halaman awal dari aplikasi */}
-        <Route
-          path="/weather-results"
-          element={<WeatherResultPage dataWeather={dataWeather} />}
-        />
-        {/* Router untuk ke halaman Weather untuk menampilkan informasi data cuaca */}
-      </Routes>
-    </Router>
-  );
-};
+   <Router>
+    <Routes>
+      <Route path='/' element={ <LoginPage /> } /> {/* Router sign in */}
+      <Route path='/register-page' element={ <RegisterPage /> } /> {/* Router sign up */}
+      <Route path='/landing-page' element={ <LandingPage dataWeather={dataWeather} /> } /> {/* Router Landing Page */}
+      <Route path='/about-page' element={ <AboutPage dataWeather={dataWeather} /> } /> {/* Router ABout Page */}
+      <Route path='/weather-home' element={ <WeatherAppHome dataWeather={dataWeather} /> } /> {/* Router untuk ke halaman Home atau halaman awal dari aplikasi */}
+      <Route path='/weather-results' element={ <WeatherResultPage dataWeather={dataWeather} /> } /> {/* Router untuk ke halaman Weather untuk menampilkan informasi data cuaca */}
+    </Routes>
+   </Router>
+  )
+}
 
 export default App;
