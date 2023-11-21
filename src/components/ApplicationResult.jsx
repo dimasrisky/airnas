@@ -37,7 +37,6 @@ const ApplicationResult = ({ dataWeather }) => {
           </button>
         </Link>
       </nav>
-
       <section className="px-[4%] sm:px-[10%] ">
         <div className="weather-bg h-[498px] w-full max-w-[915px] rounded-[30px] sm:h-[683px] lg:h-[480px]">
           <div className="flex h-full w-full flex-col items-center gap-[10px] px-[25px] py-[30px] sm:px-[60px] lg:flex-row lg:justify-center lg:gap-[100px]">
@@ -83,6 +82,7 @@ const ApplicationResult = ({ dataWeather }) => {
                   title="Humidity"
                   data={`${hu}%`}
                 />
+
               </div>
             </div>
           </div>
