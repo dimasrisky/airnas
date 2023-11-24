@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import InformationsCard from "./InformationsCard";
 
-
 const ApplicationResult = ({ dataWeather }) => {
   const { country, city, state } = dataWeather || {};
   const { tp, pr, hu, ws, ic } = dataWeather.current.weather || {};
@@ -18,8 +17,8 @@ const ApplicationResult = ({ dataWeather }) => {
     icon.includes("n") ? `/assets/icons/moon.png` : `/assets/icons/sun.png`;
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center border border-green-500">
-      <nav className="absolute top-0 flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%]">
+    <main className="border">
+      <nav className="flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%]">
         <Link to="/weather-home">
           <div className="flex items-center gap-[10px]">
             <img
@@ -38,8 +37,8 @@ const ApplicationResult = ({ dataWeather }) => {
         </Link>
       </nav>
       <section className="px-[4%] sm:px-[10%] ">
-        <div className="weather-bg h-[498px] w-full max-w-[915px] rounded-[30px] sm:h-[683px] lg:h-[480px]">
-          <div className="flex h-full w-full flex-col items-center gap-[10px] px-[25px] py-[30px] sm:px-[60px] lg:flex-row lg:justify-center lg:gap-[100px]">
+        <div className="weather-bg mx-auto h-[498px] w-full max-w-[915px] rounded-[30px] sm:h-[683px] lg:h-[480px]">
+          <div className="flex h-full w-full flex-col items-center gap-[10px] px-[4%] py-[30px] sm:px-[60px] lg:flex-row lg:justify-center lg:gap-[100px]">
             <div className="flex flex-col justify-center text-center">
               <h1 className="textShadow text-[16px] font-bold text-white sm:text-[24px]">
                 {city || "Loading"}
@@ -61,7 +60,7 @@ const ApplicationResult = ({ dataWeather }) => {
               <h5 className="textShadow text-center text-[14px] font-bold text-white sm:text-[24px] lg:text-left">
                 Informasi Cuaca Hari Ini
               </h5>
-              <div className="grid w-[100%] grid-cols-2 grid-rows-2 gap-[10px] sm:gap-[20px]">
+              <div className="grid w-[100%] grid-cols-2 grid-rows-2 gap-[10px] overflow-x-hidden sm:gap-[20px]">
                 <InformationsCard
                   icon="/assets/icons/winds.png"
                   title="Wind Speed"
@@ -82,7 +81,6 @@ const ApplicationResult = ({ dataWeather }) => {
                   title="Humidity"
                   data={`${hu}%`}
                 />
-
               </div>
             </div>
           </div>
