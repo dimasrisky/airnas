@@ -2,7 +2,7 @@ import React from "react";
 
 const InformationsCard = ({ icon, title, data }) => {
   return (
-    <div className="cardShadow w-[148px] rounded-[10px] bg-white sm:w-[193px] sm:rounded-[15px]">
+    <div className="cardShadow w-[140px] rounded-[10px] bg-white sm:w-[193px] sm:rounded-[15px]">
       <div className="flex items-center gap-[15px] py-[16px] pl-[16px] sm:gap-[25px] sm:py-[19px] sm:pl-[22px] ">
         <img
           src={icon}
