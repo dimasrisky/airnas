@@ -8,7 +8,7 @@ const RegisterPage = () => {
     <section className="min-h-screen xl:flex">
       <div className="flex flex-col gap-[35px] px-[10%] py-[4%] sm:py-[6%] xl:w-[50%] xl:px-[8%] xl:py-[2%] xl:pr-[89px]">
         <Link to="/" className="flex items-center gap-[10px]">
-          <img src="/assets/icons/logo.png" alt="logo" className="h-[50px] w-[50px] "/>
+          <img src="/assets/svg/logo.svg" alt="logo" className="h-[50px] w-[50px] "/>
           <h1 className="text-2xl font-bold">Airnas</h1>
         </Link>
         <div className="flex flex-col gap-[50px]">
@@ -31,7 +31,7 @@ const RegisterPage = () => {
           <UserInput title="Email" type="email" placeholder="contohemail123@contoh.com"/>
           <UserInput title="Kata Sandi" type="password" />
         </div>
-        <Link to="/landing-page">
+        <Link to="/landing">
           <button className="bg-primary-500 loginBtnShadow w-full rounded-[10px] py-[15px] text-[20px] font-semibold text-white">Daftar</button>
         </Link>
         <p className="text-primary-800 text-center text-[18px] font-medium ">Sudah punya akun?{" "}
