@@ -8,7 +8,7 @@ const LoginPage = () => {
     <section className="min-h-screen xl:flex">
       <div className="flex flex-col gap-[35px] px-[10%] py-[4%] sm:py-[6%] xl:w-[50%] xl:px-[8%] xl:py-[6%] xl:pr-[89px]">
         <Link to="/" className="flex items-center gap-[10px]">
-          <img src="/assets/icons/logo.png" alt="logo" className="h-[50px] w-[50px] " />
+          <img src="/assets/svg/logo.svg" alt="logo" className="h-[50px] w-[50px] " />
           <h1 className="text-2xl font-bold">Airnas</h1>
         </Link>
         <div className="flex flex-col gap-[50px]">
@@ -29,12 +29,12 @@ const LoginPage = () => {
         <div className="flex flex-col gap-[28px]">
           <UserInput title="Email" type="email" placeholder="contohemail123@contoh.com" />
           <UserInput title="Kata Sandi" type="password" />
-          <Link to="/landing-page">
+          <Link to="/landing">
             <button className="bg-primary-500 loginBtnShadow hover:bg-primary-600 w-full rounded-[10px] py-[15px] text-[20px] font-semibold text-white transition-all">Masuk</button>
           </Link>
         </div>
         <p className="text-primary-800 text-center text-[18px] font-medium ">Belum punya akun?{" "}
-          <Link to="/register-page" className="text-primary-500 hover:text-primary-600 font-bold transition-all">Daftar</Link>
+          <Link to="/register" className="text-primary-500 hover:text-primary-600 font-bold transition-all">Daftar</Link>
         </p>
       </div>
       <div className="bg-primary-500 hidden flex-col items-center justify-center gap-[50px] text-white xl:flex xl:min-h-screen xl:w-[50%] xl:px-[91px]">

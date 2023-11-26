@@ -5,12 +5,12 @@ import {
   LandingPage,
   LoginPage,
   RegisterPage,
-  WeatherPage,
-  WeatherResultPage,
+  ApplicationHomePage,
+  ApplicationResultPage,
+  ContactPage
 } from "./pages";
 
 const App = () => {
-  // Fetching API ketika user pertama mengunjungi aplikasi/website, kemudian hasil dari fetch akan ditaruh kedalam state dataWeather
   const [dataWeather, setDataWeather] = useState();
 
   useEffect(() => {
@@ -25,28 +25,33 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} /> {/* Router sign in */}
-        <Route path="/register-page" element={<RegisterPage />} />{" "}
+        <Route path="/register" element={<RegisterPage />} />{" "}
         {/* Router sign up */}
         <Route
-          path="/landing-page"
+          path="/landing"
           element={<LandingPage dataWeather={dataWeather} />}
         />{" "}
         {/* Router Landing Page */}
         <Route
-          path="/about-page"
+          path="/about"
           element={<AboutPage dataWeather={dataWeather} />}
         />{" "}
-        {/* Router ABout Page */}
+        {/* Router About Page */}
         <Route
-          path="/weather-home"
-          element={<WeatherPage dataWeather={dataWeather} />}
+          path="/contact"
+          element={<ContactPage dataWeather={dataWeather} />}
         />{" "}
-        {/* Router untuk ke halaman Home atau halaman awal dari aplikasi */}
+        {/* Router About Page */}
         <Route
-          path="/weather-results"
-          element={<WeatherResultPage dataWeather={dataWeather} />}
+          path="/weather"
+          element={<ApplicationHomePage dataWeather={dataWeather} />}
         />{" "}
-        {/* Router untuk ke halaman Weather untuk menampilkan informasi data cuaca */}
+        {/* Router halaman awal dari aplikasi */}
+        <Route
+          path="/weather-result"
+          element={<ApplicationResultPage dataWeather={dataWeather} />}
+        />{" "}
+        {/* Router halaman hasil data dari aplikasi */}
       </Routes>
     </Router>
   );
