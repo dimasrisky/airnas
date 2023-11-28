@@ -19,7 +19,7 @@ const Hero = ({ detailsData }) => {
   return (
     <section className="px-[4%] py-[30%] sm:px-[10%] sm:py-[5%] lg:flex lg:min-h-screen lg:items-center lg:justify-center lg:py-0 ">
       <div className="weather-bg mx-auto h-[498px] w-full max-w-[915px] rounded-[30px] sm:h-[683px] lg:h-[480px]">
-        <div className="flex h-full w-full flex-col items-center gap-[10px] px-[4%] py-[30px] sm:px-[60px] lg:flex-row lg:justify-center lg:gap-[100px]">
+        <div className="flex h-full w-full flex-col items-center gap-[10px] px-0 py-[30px] min-[350px]:px-[4%] sm:px-[40px] lg:flex-row lg:justify-center lg:gap-[100px]">
           <div className="flex flex-col justify-center text-center">
             <h1 className="textShadow text-[16px] font-bold text-white sm:text-[24px]">
               {city || "Loading"}
@@ -41,7 +41,7 @@ const Hero = ({ detailsData }) => {
             <h5 className="textShadow text-center text-[14px] font-bold text-white sm:text-[24px] lg:text-left">
               Informasi Cuaca Hari Ini
             </h5>
-            <div className="grid w-[100%] grid-cols-2 grid-rows-2 gap-[10px] overflow-x-hidden sm:gap-[20px]">
+            <div className="grid w-[100%] grid-cols-2 grid-rows-2 gap-[10px] sm:gap-[20px]">
               <CardData
                 icon="/assets/icons/winds.png"
                 title="Wind Speed"

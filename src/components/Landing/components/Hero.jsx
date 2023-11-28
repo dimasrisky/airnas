@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col justify-between gap-[15px] px-[5%] pt-[7rem] text-center xl:mt-[8rem] xl:flex-row-reverse xl:items-center xl:gap-[57px] xl:px-[8%]">
+    <section className="flex flex-col justify-between gap-[15px] px-[5%] pt-[5rem] text-center xl:mt-[8rem] xl:flex-row-reverse xl:items-center xl:gap-[57px] xl:px-[8%]">
       <img
         src="/assets/img/hero-image.png"
         alt="hero-image"
-        className="mx-auto xl:mx-0 2xl:mx-auto w-[320px] sm:w-[461px] xl:w-[530px]"
+        className="mx-auto w-[320px] sm:w-[461px] xl:mx-0 xl:w-[530px] 2xl:mx-auto"
       />
-      <div className="mx-auto xl:mx-0 2xl:mx-auto flex flex-col gap-2 md:max-w-[640px] xl:max-w-[573px] xl:gap-5">
+      <div className="mx-auto flex flex-col gap-2 md:max-w-[640px] xl:mx-0 xl:max-w-[573px] xl:gap-5 2xl:mx-auto">
         <span className="text-primary-600 bg-primary-100 mx-auto rounded-full px-[17px] py-[0.5rem] text-[10px] font-bold sm:text-[14px] xl:mx-0 xl:w-fit">
           Bencana Alam yang Tak Bisa Diabaikan
         </span>
