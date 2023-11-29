@@ -1,35 +1,61 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import WeatherAppHome from './pages/WeatherAppHome'
-import WeatherResults from './pages/WeatherResultsPages'
-import LandingPages from './pages/LandingPages'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
-import AboutPage from './pages/AboutPage'
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  AboutPage,
+  LandingPage,
+  LoginPage,
+  RegisterPage,
+  ApplicationHomePage,
+  ApplicationResultPage,
+  ContactPage,
+} from "./pages";
 
 const App = () => {
+  const [dataWeather, setDataWeather] = useState();
 
-  // Fetching API ketika user pertama mengunjungi aplikasi/website, kemudian hasil dari fetch akan ditaruh kedalam state dataWeather
-  // Kalo penasaran isinya apa bisa di console.log(dataWeather)
-  const [dataWeather, setDataWeather] = useState()
   useEffect(() => {
-    fetch(`http://api.airvisual.com/v2/nearest_city?key=1b207dba-b246-40a5-9be4-c2c4abd3138d`)
-      .then(res => res.json())
-      .then(weatherData => setDataWeather(weatherData.data))
-  }, [])
+    fetch(
+      `http://api.airvisual.com/v2/nearest_city?key=1b207dba-b246-40a5-9be4-c2c4abd3138d`,
+    )
+      .then((res) => res.json())
+      .then((weatherData) => setDataWeather(weatherData.data));
+  }, []);
 
   return (
-   <Router>
-    <Routes>
-      <Route path='/' element={ <LoginPage /> } /> {/* Router sign in */}
-      <Route path='/register-page' element={ <RegisterPage /> } /> {/* Router sign up */}
-      <Route path='/landing-page' element={ <LandingPages dataWeather={dataWeather} /> } /> {/* Router Landing Page */}
-      <Route path='/about-page' element={ <AboutPage dataWeather={dataWeather} /> } /> {/* Router ABout Page */}
-      <Route path='/weather-home' element={ <WeatherAppHome dataWeather={dataWeather} /> } /> {/* Router untuk ke halaman Home atau halaman awal dari aplikasi */}
-      <Route path='/weather-results' element={ <WeatherResults dataWeather={dataWeather} /> } /> {/* Router untuk ke halaman Weather untuk menampilkan informasi data cuaca */}
-    </Routes>
-   </Router>
-  )
-}
+    <Router>
+      <Routes>
+        {/* Router sign in */}
+        <Route path="/" element={<LoginPage />} />
+        {/* Router sign up */}
+        <Route path="/register" element={<RegisterPage />} />
+        {/* Router Landing Page */}
+        <Route
+          path="/landing"
+          element={<LandingPage dataWeather={dataWeather} />}
+        />
+        {/* Router About Page */}
+        <Route
+          path="/about"
+          element={<AboutPage dataWeather={dataWeather} />}
+        />
+        {/* Router About Page */}
+        <Route
+          path="/contact"
+          element={<ContactPage dataWeather={dataWeather} />}
+        />
+        {/* Router halaman awal dari aplikasi */}
+        <Route
+          path="/weather"
+          element={<ApplicationHomePage dataWeather={dataWeather} />}
+        />
+        {/* Router halaman hasil data dari aplikasi */}
+        <Route
+          path="/weather-result"
+          element={<ApplicationResultPage dataWeather={dataWeather} />}
+        />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

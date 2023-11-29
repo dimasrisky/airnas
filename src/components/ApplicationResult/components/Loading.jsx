@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Loading = () => {
   return (
@@ -8,7 +8,7 @@ const Loading = () => {
       <p className="ml-2 text-black">Loading...</p>
     </div>
     </>
-  )
-}
+  );
+};
 
-export default Loading
+export default Loading;
