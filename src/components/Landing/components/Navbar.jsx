@@ -6,7 +6,7 @@ const Navbar = ({ navData }) => {
   let { city, country } = navData || {};
 
   return (
-    <nav className="fixed top-0 z-[999]">
+    <header className="fixed top-0 z-[999]">
       <div className="w-screen border-b-2 bg-white px-[8%] py-[1.2rem] shadow-md">
         <div className="mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -17,7 +17,7 @@ const Navbar = ({ navData }) => {
             />
             <h3 className="text-[16px] font-bold sm:text-[24px]">Airnas</h3>
           </div>
-          <div className="hidden items-center gap-3 xl:flex xl:gap-[25px]">
+          <div className="hidden items-center gap-3 xl:flex xl:gap-[10px]">
             <img
               src="/assets/icons/location.png"
               alt="location"
@@ -126,7 +126,7 @@ const Navbar = ({ navData }) => {
           </a>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
