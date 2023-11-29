@@ -7,7 +7,7 @@ import {
   RegisterPage,
   ApplicationHomePage,
   ApplicationResultPage,
-  ContactPage
+  ContactPage,
 } from "./pages";
 
 const App = () => {
@@ -24,34 +24,35 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} /> {/* Router sign in */}
-        <Route path="/register" element={<RegisterPage />} />{" "}
+        {/* Router sign in */}
+        <Route path="/" element={<LoginPage />} />
         {/* Router sign up */}
+        <Route path="/register" element={<RegisterPage />} />
+        {/* Router Landing Page */}
         <Route
           path="/landing"
           element={<LandingPage dataWeather={dataWeather} />}
-        />{" "}
-        {/* Router Landing Page */}
+        />
+        {/* Router About Page */}
         <Route
           path="/about"
           element={<AboutPage dataWeather={dataWeather} />}
-        />{" "}
+        />
         {/* Router About Page */}
         <Route
           path="/contact"
           element={<ContactPage dataWeather={dataWeather} />}
-        />{" "}
-        {/* Router About Page */}
+        />
+        {/* Router halaman awal dari aplikasi */}
         <Route
           path="/weather"
           element={<ApplicationHomePage dataWeather={dataWeather} />}
-        />{" "}
-        {/* Router halaman awal dari aplikasi */}
+        />
+        {/* Router halaman hasil data dari aplikasi */}
         <Route
           path="/weather-result"
           element={<ApplicationResultPage dataWeather={dataWeather} />}
-        />{" "}
-        {/* Router halaman hasil data dari aplikasi */}
+        />
       </Routes>
     </Router>
   );
