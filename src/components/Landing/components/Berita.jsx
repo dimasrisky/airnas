@@ -15,7 +15,7 @@ const Berita = () => {
           <h1 className="text-primary-900 text-[26px] font-extrabold sm:text-[32px]">
             Berita & Artikel Terbaru
           </h1>
-          <p className="text-primary-800 text-[12px] font-semibold sm:text-[16px] xl:text-justify">
+          <p className="text-primary-800 text-[12px] font-semibold sm:text-[16px] max-w-[562px] xl:text-justify">
             Baca dan update selalu mengenai berita pemanasan global, kenaikan
             suhu ekstrem yang terjadi dan lainnya
           </p>
@@ -31,12 +31,12 @@ const Berita = () => {
               href="https://regional.kompas.com/read/2023/10/03/153430878/cuaca-panas-di-babel-capai-38-derajat-celsius-pekerja-disarankan-pakai?page=all"
               target="_blank"
               rel="noreferrer"
-              className=" text-primary-800 text-[16px] font-semibold leading-5 sm:text-[20px] sm:leading-6"
+              className=" text-primary-800 text-[16px] font-semibold leading-5 sm:text-[20px] max-w-[562px] sm:leading-6"
             >
               Cuaca Panas di Babel Capai 38 Derajat Celsius, Pekerja Disarankan
               Pakai Pelindung
             </a>
-            <p className="text-[12px] font-medium text-[#A54230] sm:text-[14px]">
+            <p className="text-[12px] font-medium text-[#A54230] max-w-[562px] sm:text-[14px]">
               Paparan terik matahari diperkirakan mencapai 38 derajat celsius
               pada saat siang hari. Kepala Badan Penanggulangan Bencana Daerah
               (BPBD) Bangka Belitung Mikron Antariksa mengatakan, fenomena suhu
