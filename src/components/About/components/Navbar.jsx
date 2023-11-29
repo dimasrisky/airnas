@@ -16,19 +16,21 @@ const Navbar = ({ navData }) => {
             />
             <h3 className="text-[16px] font-bold sm:text-[24px]">Airnas</h3>
           </div>
-          <div className="hidden items-center gap-3 xl:flex xl:gap-[25px]">
-            <img
-              src="/assets/icons/location.png"
-              alt="location"
-              className="w-[48px]"
-            />
-            <div>
-              <p className="text-[12px]">Lokasi</p>
-              <p className="text-primary-500 text-[16px] font-semibold">{`${
-                navData?.country || "Loading.."
-              }, ${
-                city === "Pacarkeling" ? "Surabaya" : city || "Loading.."
-              }`}</p>
+          <div className="hidden items-center gap-3 xl:flex xl:gap-[40px]">
+            <div className="flex gap-[10px]">
+              <img
+                src="/assets/icons/location.png"
+                alt="location"
+                className="w-[48px]"
+              />
+              <div>
+                <p className="text-[12px]">Lokasi</p>
+                <p className="text-primary-500 text-[16px] font-semibold">{`${
+                  navData?.country || "Loading.."
+                }, ${
+                  city === "Pacarkeling" ? "Surabaya" : city || "Loading.."
+                }`}</p>
+              </div>
             </div>
             <Link
               to="/weather"
