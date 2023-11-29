@@ -73,7 +73,7 @@ const Footer = () => {
               <img
                 src="/assets/icons/arrow.png"
                 alt="arrow"
-                className={`transition-all hover:cursor-pointer ${
+                className={`transition-all duration-[400ms] ease-in-out hover:cursor-pointer ${
                   isSosialMediaOpen ? "rotate-0" : "rotate-[180deg]"
                 } sm:hidden`}
               />
@@ -140,7 +140,7 @@ const Footer = () => {
               <img
                 src="/assets/icons/arrow.png"
                 alt="arrow"
-                className={`transition-all hover:cursor-pointer ${
+                className={`transition-all duration-[400ms] ease-in-out hover:cursor-pointer ${
                   isLainnyaOpen ? "rotate-0" : "rotate-[180deg]"
                 } sm:hidden`}
               />
