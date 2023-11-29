@@ -11,14 +11,14 @@ const Landing = ({ fetchData }) => {
   return (
     <>
       <Navbar navData={fetchData} />
-      <main>
+      <main className="mx-auto max-w-[1440px]">
         <Hero />
         <Penyebab />
         <Statistik />
         <Overview />
         <Berita />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

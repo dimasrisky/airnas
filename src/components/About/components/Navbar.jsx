@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ navData }) => {
   const [navOpen, setNavOpen] = useState(false);
+  let { city } = navData;
   return (
     <nav className="fixed top-0 z-[999]">
       <div className="w-screen border-b-2 bg-white px-[8%] py-[1.2rem] shadow-md">
@@ -25,7 +26,9 @@ const Navbar = ({ navData }) => {
               <p className="text-[12px]">Lokasi</p>
               <p className="text-primary-500 text-[16px] font-semibold">{`${
                 navData?.country || "Loading.."
-              }, ${navData?.city || "Loading.."}`}</p>
+              }, ${
+                city === "Pacarkeling" ? "Surabaya" : city || "Loading.."
+              }`}</p>
             </div>
             <Link
               to="/weather"

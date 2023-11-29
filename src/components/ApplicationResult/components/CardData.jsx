@@ -2,8 +2,8 @@ import React from "react";
 
 const CardData = ({ icon, title, data }) => {
   return (
-    <div className="cardShadow max-w-[140px] rounded-[10px] bg-white sm:w-[193px] sm:rounded-[15px]">
-      <div className="flex items-center gap-[10px] py-[16px] pl-[10px] pr-[8px] min-[350px]:gap-[15px] min-[350px]:pl-[16px] sm:gap-[25px] sm:py-[19px] sm:pl-[22px] ">
+    <div className="cardShadow max-w-[140px] rounded-[10px] bg-white sm:max-w-[200px] sm:rounded-[15px]">
+      <div className="flex items-center gap-[10px] py-[16px] pl-[10px] pr-[8px] min-[350px]:gap-[15px] min-[350px]:pl-[16px] sm:gap-[25px] sm:py-[19px] sm:pl-[22px] sm:pr-[15px] ">
         <img
           src={icon}
           alt="icon"

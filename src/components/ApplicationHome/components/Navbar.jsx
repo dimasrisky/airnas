@@ -5,7 +5,7 @@ const Navbar = ({ navData }) => {
   const { country, city } = navData || {};
 
   return (
-    <nav className="fixed flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%]">
+    <nav className="relative flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%] lg:fixed">
       <Link to="/weather">
         <div className="flex items-center gap-[10px]">
           <img
@@ -27,7 +27,9 @@ const Navbar = ({ navData }) => {
             Lokasi
           </p>
           <p className="text-primary-600 text-[12px] font-bold sm:text-[16px]">
-            {`${country || "Loading"}, ${city || "Loading"}`}
+            {`${country || "Loading"}, ${
+              city === "Pacarkeling" ? "Surabaya" : city || "Loading.."
+            }`}
           </p>
         </div>
       </div>
