@@ -6,7 +6,7 @@ const Navbar = ({ navData }) => {
 
   return (
     <nav className="relative flex h-[60px] w-full items-center justify-between px-[4%] sm:h-[100px] sm:px-[10%] lg:fixed">
-      <Link to="/weather">
+      <Link to="/landing">
         <div className="flex items-center gap-[10px]">
           <img
             src="/assets/svg/logo.svg"

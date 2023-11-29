@@ -47,8 +47,8 @@ const Footer = () => {
             <div className="mt-[1rem] hidden flex-col gap-2 text-[14px] font-medium  sm:flex">
               <Link to="/about">Tentang Kami</Link>
               <Link to="/contact">Hubungi Kami</Link>
-              <a href="">Kebijakan Privasi</a>
-              <a href="">Syarat dan ketentuan</a>
+              <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Kebijakan Privasi</a>
+              <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Syarat dan ketentuan</a>
             </div>
 
             {/* Dropdown Mobile */}
@@ -56,8 +56,8 @@ const Footer = () => {
               <div className="mt-[1rem] flex flex-col gap-2 text-[14px] font-medium sm:hidden">
                 <Link to="/about">Tentang Kami</Link>
                 <Link to="/contact">Hubungi Kami</Link>
-                <a href="">Kebijakan Privasi</a>
-                <a href="">Syarat dan ketentuan</a>
+                <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Kebijakan Privasi</a>
+                <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Syarat dan ketentuan</a>
               </div>
             ) : null}
           </div>
@@ -146,14 +146,14 @@ const Footer = () => {
               />
             </div>
             <div className="mt-[1rem] hidden flex-col gap-2 text-[14px] font-medium sm:flex">
-              <a href="">Lisensi</a>
-              <a href="">Partnership</a>
+              <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Lisensi</a>
+              <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Partnership</a>
             </div>
             {/* Dropdown Mobile */}
             {isLainnyaOpen ? (
               <div className="mt-[1rem] flex flex-col gap-2 text-[14px] font-medium">
-                <a href="">Lisensi</a>
-                <a href="">Partnership</a>
+                <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Lisensi</a>
+                <a onClick={() => alert("fitur ini masih belum bisa dipakai")}>Partnership</a>
               </div>
             ) : null}
           </div>
