@@ -79,16 +79,52 @@ const Footer = () => {
               />
             </div>
             <div className="mt-[1rem] hidden flex-col gap-2 text-[14px] font-medium sm:flex">
-              <a href="">Twitter</a>
-              <a href="">Facebook</a>
-              <a href="">Instagram</a>
+              <a
+                href="https://twitter.com/OSISSMK8"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Twitter
+              </a>
+              <a
+                href="https://www.facebook.com/smknegeri8malang/?locale=id_ID"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/smkn8malang/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
             </div>
             {/* Dropdown Mobile */}
             {isSosialMediaOpen ? (
               <div className="mt-[1rem] flex flex-col gap-2 text-[14px] font-medium">
-                <a href="">Twitter</a>
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
+                <a
+                  href="https://twitter.com/OSISSMK8"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Twitter
+                </a>
+                <a
+                  href="https://www.facebook.com/smknegeri8malang/?locale=id_ID"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/smkn8malang/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
               </div>
             ) : null}
           </div>
